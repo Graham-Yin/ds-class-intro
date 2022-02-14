@@ -23,10 +23,10 @@ def calculation(a, b):
 	'''
 
 	# code up your solution here
+    return a+b, a-b
 
 
-
-def triangle_lambda():
+def triangle_lambda(s,h):
 	'''
 	Return a lambda object that takes in a base and height of triangle
 	and computes the area.
@@ -37,7 +37,7 @@ def triangle_lambda():
 	Returns:
 	lambda_triangle_area: the lambda
 	'''
-
+    return s*h/2
 
 
 def sort_words(hyphen_str):
@@ -59,6 +59,9 @@ def sort_words(hyphen_str):
 	'''
 
 	# code up your solution here
+    x=hyphen-str.split()
+    x.sort()
+    return "-".join(x)
 
 
 
